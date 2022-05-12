@@ -1,37 +1,26 @@
-import { StyleSheet, Text, View,TextInput,TouchableOpacity} from 'react-native';
+import { StyleSheet, Text, View,TextInput} from 'react-native';
 
 export default function Login() {
     return (
    <View style={styles.main}>
-
        <View style={styles.hearderSection}>
-
-         <View style={styles.header}>
-             
+         <View style={styles.header}>  
           <View style={{width:'100%'}}> <Text style={{fontWeight:'800', fontSize:40, color:'#fff'}}>Welcome Back!</Text>
            </View>
-
            <View style={{width:'100%', justifyContent:'center', alignItems:'center'}}> 
           <Text style={{fontWeight:'800', fontSize:20, color:'#fff'}}>Login to continue</Text>
          </View>
-
         </View>
-
-    </View>
-
+      </View>
        <View style={styles.credSection}>
-
         <TextInput style={styles.input} placeholder="Username" ></TextInput>
-        <TextInput style={styles.input} placeholder="Password" secureTextEntry ></TextInput>
-        <TouchableOpacity> <View style={{marginTop:10, justifyContent:'flex-end'}}><Text style={{fontSize:20, fontWeight:'600',color:'#fff'}}>Forgot Password?</Text></View></TouchableOpacity>
-        
+         <TextInput style={styles.input} placeholder="Password" secureTextEntry ></TextInput>
+          <View style={{marginTop:10, justifyContent:'flex-end'}}><Text style={{fontSize:20, fontWeight:'600',color:'#fff'}}>Forgot Password?</Text></View> 
+          </View>
+          <View style={styles.loginSection}>
+         <View style={styles.loginSent}><Text style={{fontWeight:'bold', fontSize:20}}>LOGIN</Text></View>
        </View>
-
-       <View style={styles.loginSection}>
-           <View style={styles.loginSent}><Text style={{fontWeight:'bold', fontSize:20}}>LOGIN</Text></View>
-       </View>
-       
-   </View>
+     </View>
           
     )
 }
